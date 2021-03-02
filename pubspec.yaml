@@ -12,9 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
-  firebase_core:
+  device_info: 
+  flutter_phoenix:
   firebase_auth: null
+  firebase_core: null
   pin_entry_text_field: ^0.1.4
+  shared_preferences: null
 
 dev_dependencies:
   flutter_test:

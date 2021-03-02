@@ -1,6 +1,7 @@
 import 'package:firebase_otp/home_screen.dart';
 import 'package:firebase_otp/login_service.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:pin_entry_text_field/pin_entry_text_field.dart';
 
 class OtpVerify extends StatefulWidget {
@@ -47,6 +48,9 @@ class _OtpVerifyState extends State<OtpVerify> {
                         content: const Text('OTP failed'),
                         duration: const Duration(seconds: 1),
                       ));
+                    }else{
+                      print('true');
+                      Phoenix.rebirth(context);
                     }
                   });
                 },
